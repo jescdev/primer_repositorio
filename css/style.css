@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  top: 0px;
+  position: sticky;
+  z-index: 1;
+  background-color: rgb(139, 207, 255);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav li {
+  list-style-type: none;
+  padding: 60px;
+  font-size: 20px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.header img {
+  padding: 20px;
+}
+
+.carrouselIndex {
+  background-image: url(../assets/img/imagen-clinica.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carrouselIndex h2 {
+  color: aliceblue;
+  font-size: 3rem;
+  padding: 50px;
+}
+
+.textoIndex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textoIndex p {
+  font-size: 1rem;
+  padding: 20px;
+}
+
+.textoIndex h3 {
+  font-size: 2rem;
+}
+
+.videoIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: blueviolet;
+}
+
+.flex-containerMain {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.col {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background-color: rgb(139, 207, 255);
+}
+
+.textoFooter {
+  color: aliceblue;
+}
+
+.redes i {
+  font-size: 50px;
+  color: aliceblue;
+}
+
+/*GRID INDEX*/
+
+.containerGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px 600px 500px 150px;
+  grid-template-areas:
+    "header "
+    "carrouselIndex "
+    "flex-containerMain "
+    "footer ";
+}
+
+.containerGrid .header {
+  color: aliceblue;
+  grid-area: header;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+}
+
+.containerGrid .carrouselIndex {
+  background-color: rgb(139, 207, 255);
+  grid-area: carrouselIndex;
+  /*  grid-column-start: 1;
+  grid-column-end: 4; */
+}
+
+.containerGrid .flex-containerMain .textoIndex {
+  background-color: rgb(139, 207, 255);
+  color: aliceblue;
+  grid-area: textoIndex;
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
+}
+
+.containerGrid .flex-containerMain .videoIndex {
+  grid-area: videoIndex;
+  background-color: rgb(139, 207, 255);
+}
+
+.containerGrid .footer {
+  background-color: black;
+  grid-area: footer;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+}
+
+@media screen and (max-width: 1140px) {
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .nav li {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 230px 600px 500px 150px;
+    grid-template-areas:
+      "header"
+      "carrouselIndex"
+      "flex-containerMain"
+      "footer";
+  }
+  .flex-containerMain {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*GRID CONTACTO*/
+
+.containerGrid-contacto {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px 800px 150px;
+  grid-template-areas:
+    "header"
+    "contacto"
+    "footer";
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacto h3 {
+  font-size: 24px;
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.contacto .contenedor .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.formulario .nombre,
+.apellido,
+.email,
+.telefono,
+.asunto,
+.mensaje {
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  padding: 15px 30px;
+  margin: 5px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.formulario .nombre,
+.apellido,
+.email,
+.telefono {
+  width: 46%;
+}
+
+.formulario .mensaje {
+  width: 96%;
+  max-width: 96%;
+  min-width: 96%;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.formulario .boton {
+  margin: auto;
+  padding: 15px 25px;
+  background: none;
+  background-color: crimson;
+}
+
+@media screen and (max-width: 768px) {
+  .formulario .nombre,
+  .apellido,
+  .email,
+  .telefono,
+  .asunto,
+  .mensaje {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .containerGrid-contacto {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 230px 800px 150px;
+    grid-template-areas:
+      "header"
+      "contacto"
+      "footer";
+  }
+}
+
+.cont-grid-tarj-esp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 20px;
+}
+
+.tarj-esp {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.containerGrid-espe {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px 800px 150px;
+  grid-template-areas:
+    "header"
+    "cont-grid-tarj-esp"
+    "footer";
+}
+
+/*UBICACION*/
+
+.mainUbicacion {
+  display: inline-block;
+  position: relative;
+  background-color: rgb(139, 207, 255);
+  width: 100%;
+}
+
+.img__ubicacion img {
+  width: 100%;
+  height: 100%;
+}
+
+.img__ubicacion {
+  margin-left: -50px;
+}
+
+.mapa__ubicacion {
+  width: 100%;
+  left: 0px;
+  top: 50px;
+}
+
+.containerMapa h3 {
+  font-size: 3rem;
+  margin-top: 50px;
+  color: aliceblue;
+}
+
+/*NOSOTROS*/
+
+.mainNosotros {
+  position: relative;
+  text-align: center;
+  background-color: rgb(139, 207, 255);
+}
+
+.img__nosotros img {
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+
+.img__nosotros {
+  margin-left: -50px;
+}
+
+.parrafo__nosotros h2 {
+  font-size: 2rem;
+  position: relative;
+  right: 600px;
+  top: 150px;
+}
+
+.parrafo__nosotros p {
+  background-color: rgb(42, 140, 205);
+  position: relative;
+  font-size: 1rem;
+  width: 800px;
+  height: 300px;
+  left: 700px;
+  bottom: 20px;
+  color: aliceblue;
+}
+
+.parrafo__nosotros {
+  position: relative;
+  padding-top: 10px;
+}
