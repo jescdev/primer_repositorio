@@ -401,3 +401,8 @@ html {
     transform: translateX(10px);
   }
 }
+
+.tarj-esp:hover,
+.tarj-esp:focus-within {
+  transform: scale(1.05);
+}
