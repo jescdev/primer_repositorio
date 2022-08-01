@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ICONO DE PESTAÑA -->
     <link rel="shotcurt icon" href="../assets/img/hospital.png" />
-    <link rel="stylesheet" href="../css/style.css" />
+<!-- BS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  />
+  <!-- FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap"
       rel="stylesheet"
@@ -16,63 +23,148 @@
     <title>Contacto</title>
   </head>
   <body>
-    <div class="containerGrid-contacto">
-        <header class="header">
-            <img src="../assets/img/logo-main.png" alt="logo principal" />
-            <!-- COMIENZO MENÚ NAV -->
-            <ul class="nav">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="ubicacion.html">Ubicación</a></li>
-            <li><a href="especialidades.html">Especialidades</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <!-- FIN DEL MENÚ NAV -->
-        </header>
-        <section class="contacto">
-            <h3>Contáctenos</h3>
-            <div class="contenedor">
-                <form class="formulario" action="">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="nombre" />
-                    <input
-                        type="email"
-                        name="apellido"
-                        id="apellido"
-                        placeholder="Apellido"
-                        class="apellido"
-                    />
-                    <input type="text" name="mail" id="mail" placeholder="email" class="email"/>
-        
-                    <input
-                        type="tel"
-                        name="telefono"
-                        id="telefono"
-                        placeholder="teléfono"
-                        class="telefono"
-                    />
+    <!-- NAV -->
+   <nav
+   class="navbar navbar-expand-lg shadow fs-5 sticky-top menu navbar-dark"
+   style="background-color: rgb(166, 216, 251)"
+ >
+   <div class="container">
+     <a class="navbar-brand m" href="#">
+       <img
+         src="../assets/img/logo-main.png"
+         alt="logo-main"
+         width="120px"
+         height="100px"
+       />
+     </a>
+     <button
+       class="navbar-toggler"
+       type="button"
+       data-bs-toggle="collapse"
+       data-bs-target="#navbarSupportedContent"
+       aria-controls="navbarSupportedContent"
+       aria-expanded="false"
+       aria-label="Toggle navigation"
+     >
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav mx-auto">
+         <li class="nav-item px-4">
+           <a class="nav-link active" href="../index.html">Inicio</a>
+         </li>
+         <li class="nav-item px-4">
+           <a class="nav-link active" href="nosotros.html">Nosotros</a>
+         </li>
+         <li class="nav-item px-4">
+           <a class="nav-link active" href="ubicacion.html">Ubicación</a>
+         </li>
+         <li class="nav-item px-4">
+           <a class="nav-link active" href="especialidades.html">Especialidades</a>
+         </li>
+         <li class="nav-item px-4">
+           <a class="nav-link active" href="contacto.html">Contacto</a>
+         </li>
+       </ul>
+     </div>
+   </div>
+ </nav>
+ <div class="container py-5">
+    <div class="mb-5 ">
+    <h2>FORMULARIO DE CONTACTO</h2>
+    </div>  
+  <div class="row">
+      <div class="mb-3 col">
+        <label for="textImput" class="form-label">Nombre</label>
+        <input
+          type="text"
+          class="form-control"
+          id="textImput"
+          placeholder="Nombre"
+        />
+      </div>
 
-                    <select name="asunto" id="asunto" class="asunto">
-                        <option value="turno">Turno</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="comentario">Comentario</option>
-                    </select>
-                    <textarea class= mensaje name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
-                    </p>
-                    <input type="submit" value="Enviar" class="boton" />
-                </form>
-            </div>
-        </section>
-        <!-- FIN DEL FORMULARIO DE CONTACTO -->
-        <footer class="footer">
-            <!-- <img src="../assets/img/logo-main.png" alt="logo principal" /> -->
-            <div class="col">
-                <div class="textoFooter">Seguinos en nuestras redes sociales</div>
-                <div class="redes">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </footer>
+      <div class="mb-3 col">
+        <label for="textImput" class="form-label">Apellido</label>
+        <input
+          type="text"
+          class="form-control"
+          id="textImput"
+          placeholder="Apellido"
+        />
+      </div>
+      <div class="mb-3 ">
+        <label for="emailImput" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="emailImput"
+          placeholder="Escribe tu email"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="telImput" class="form-label">Teléfono</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="telImput"
+          placeholder="Teléfono"
+        />
+      </div>
+
+      <div class="mb-3">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Seleccion una opción</option>
+          <option value="1">Turno</option>
+          <option value="2">Consulta</option>
+          <option value="3">Comentario</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label form="comentId" class="form-label">Comentario:</label>
+        <textarea id="comentId" class="form-control"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <input class="btn btn-primary" type="button" value="Enviar" />
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<footer class="bg-dark text-white">
+<div class="container py-5">
+  <div class="row">
+    <div class="col d-flex align-items-center">
+      <a href="#" class="col-3 ">
+      <img src="/assets/img/logo-main.png" alt="logo" 
+      width="80px"
+      height="60px">
+      </a>
+    </div>
+
+    <div class="col text-center py-3">
+      <span class="h3">Seguinos en nuestras redes sociales</span>
+      <div class="d-flex justify-content-around pt-4">
+        <a href="#"><i class="fa-brands fa-facebook fs-5"></i></a>
+        <a href="#"><i class="fab fa-twitter fs-5"></i></a>
+        <a href="#"><i class="fab fa-instagram fs-5"></i></a>
+      </div>  
+    </div>
+    
+    
+  </div>
+</div>
+</footer>
+
+<!-- JavaScript Bundle with Popper -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+crossorigin="anonymous"
+></script>
   </body>
