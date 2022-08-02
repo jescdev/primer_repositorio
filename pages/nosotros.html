@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- ICONO DE PESTAÑA -->
     <link rel="shotcurt icon" href="../assets/img/hospital.png" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- BS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,500;0,700;1,500&display=swap"
       rel="stylesheet"
@@ -19,54 +26,116 @@
     <title>Nosotros</title>
   </head>
   <body>
-    <header class="header">
-      <img src="../assets/img/logo-main.png" alt="logo principal" />
-      <!-- COMIENZO MENÚ NAV -->
-      <ul class="nav">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="ubicacion.html">Ubicación</a></li>
-        <li><a href="especialidades.html">Especialidades</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-      <!-- FIN DEL MENÚ NAV -->
-    </header>
-    <div class="mainNosotros">
-      <div class="img__nosotros">
+    <!-- NAV -->
+    <nav
+      class="navbar navbar-expand-lg shadow fs-5 sticky-top menu navbar-dark"
+      style="background-color: rgb(166, 216, 251)"
+    >
+      <div class="container">
+        <a class="navbar-brand m" href="#">
+          <img
+            src="../assets/img/logo-main.png"
+            alt="logo-main"
+            width="120px"
+            height="100px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-4">
+              <a class="nav-link active" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link active" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link active" href="ubicacion.html">Ubicación</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link active" href="especialidades.html"
+                >Especialidades</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link active" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
         <img
           src="../assets/img/img-nosotros.png"
           alt="personal de la clínica"
+          class="img-fluid"
         />
+
+        <section class="col mt-3">
+          <h2>BIENVENIDOS A CLINICA MENDOZA</h2>
+          <hr />
+          <p>
+            Clínica de Mendoza es uno de los principales centros del interior
+            del país y pionero en la República Argentina, que funciona desde el
+            año 1986 atendiendo pacientes. Desde hace más de 27 años. La
+            utilización de cirugías ambulatorias, con la aplicación de
+            procedimientos mini-invasivos, artroscópicos y microquirúrgicos. La
+            actividad asistencial es complementada por el departamento del
+            tratamiento del dolor y rehabilitación especializada. Clínica de
+            Mendoza es uno de los principales centros del interior del país y
+            pionero en la República Argentina, que funciona desde el año 1986
+            atendiendo pacientes. Desde hace más de 27 años. La utilización de
+            cirugías ambulatorias, con la aplicación de procedimientos
+            mini-invasivos, artroscópicos y microquirúrgicos. La actividad
+            asistencial es complementada por el departamento del tratamiento del
+            dolor y rehabilitación especializada.
+          </p>
+        </section>
       </div>
-      <section class="parrafo__nosotros">
-        <h2>BIENVENIDOS A CLINICA MENDOZA</h2>
-        <p>
-          Clínica de Mendoza es uno de los principales centros del interior del
-          país y pionero en la República Argentina, que funciona desde el año
-          1986 atendiendo pacientes. Desde hace más de 27 años. La utilización
-          de cirugías ambulatorias, con la aplicación de procedimientos
-          mini-invasivos, artroscópicos y microquirúrgicos. La actividad
-          asistencial es complementada por el departamento del tratamiento del
-          dolor y rehabilitación especializada. Clínica de Mendoza es uno de los
-          principales centros del interior del país y pionero en la República
-          Argentina, que funciona desde el año 1986 atendiendo pacientes. Desde
-          hace más de 27 años. La utilización de cirugías ambulatorias, con la
-          aplicación de procedimientos mini-invasivos, artroscópicos y
-          microquirúrgicos. La actividad asistencial es complementada por el
-          departamento del tratamiento del dolor y rehabilitación especializada.
-        </p>
-      </section>
     </div>
-    <footer class="footer">
-      <!-- <img src="../assets/img/logo-main.png" alt="logo principal" /> -->
-      <div class="col">
-        <div class="textoFooter">Seguinos en nuestras redes sociales</div>
-        <div class="redes">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+    <!-- FOOTER -->
+
+    <footer class="bg-dark text-white">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col d-flex align-items-center">
+            <a href="#" class="col-3">
+              <img
+                src="../assets/img/logo-main.png"
+                alt="logo"
+                width="80px"
+                height="60px"
+              />
+            </a>
+          </div>
+
+          <div class="col text-center py-3">
+            <span class="h3">Seguinos en nuestras redes sociales</span>
+            <div class="d-flex justify-content-around pt-4">
+              <a href="#"><i class="fa-brands fa-facebook fs-5"></i></a>
+              <a href="#"><i class="fab fa-twitter fs-5"></i></a>
+              <a href="#"><i class="fab fa-instagram fs-5"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
