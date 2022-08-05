@@ -10,28 +10,14 @@ html {
 }
 
 /* ANIMACIONES*/
-.nav li {
+
+.navbar .navbar-nav .nav-link {
   transition: all 0.5s;
   color: white;
 }
 
-.nav li :hover {
+.navbar .navbar-nav .nav-link:hover {
   color: blue;
-}
-
-.carrouselIndex h2 {
-  animation: from-left 1.5s ease;
-}
-
-@keyframes from-left {
-  0% {
-    opacity: 0;
-    transform: translateX(0px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(10px);
-  }
 }
 
 .card {
