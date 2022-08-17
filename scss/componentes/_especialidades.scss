@@ -17,5 +17,5 @@
 }
 
 body {
-  background-color: $color-fondo-principal;
+  background-color: map-get($colors, color-fondo-principal);
 }

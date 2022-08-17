@@ -1,0 +1,11 @@
+.fa-facebook {
+  @include redes(red);
+}
+
+.fa-twitter {
+  @extend .fa-facebook;
+}
+
+.fa-instagram {
+  @extend .fa-facebook;
+}

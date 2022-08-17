@@ -1,4 +1,6 @@
-@import "variables";
-@import "global";
-@import "navbar";
-@import "especialidades";
+@import "base/variables";
+@import "base/mixin";
+@import "componentes/global";
+@import "componentes/navbar";
+@import "componentes/especialidades";
+@import "componentes/footer";
