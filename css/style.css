@@ -15,20 +15,24 @@
   transition: all 0.3s ease-out;
 }
 .card:hover img {
-  transform: scale(1.1) translate(-20px);
+  transform: scale(1.1) translate(-5px);
 }
 
 .card-body h5 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-  background-color: #b4fa7d;
-}
-
-.fa-facebook, .fa-instagram, .fa-twitter {
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
   color: white;
-  background-color: red;
 }
 
+.map-wrapper {
+  max-width: 900px;
+}
+
+.mapa {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
