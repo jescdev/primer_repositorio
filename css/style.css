@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar .navbar-nav .nav-link {
   color: white;
   transition: 0.5s;
@@ -35,4 +41,34 @@
 .mapa {
   width: 100%;
 }
+
+.btn-wsp {
+  position: fixed;
+  z-index: 999;
+  bottom: 90px;
+  right: 30px;
+  border-radius: 50%;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+
+.btn-wsp:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton {
+  width: 100px;
+  transition: ease 1s;
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
